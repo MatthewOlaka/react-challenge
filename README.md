@@ -25,7 +25,7 @@ Acrobatics - points: 2 [+] [-] modifier: 1 total: 3
 
 - [x] Implement a maximum on all attributes of 70. For example, if a character has 20 strength and 10 for all other attributes, they must decrease one before they can increase another
 
-- [] Add the ability to edit multiple characters simultaneously with the same rules above
+- [ ] Add the ability to edit multiple characters simultaneously with the same rules above
 
 ## How to Run the Application
 
