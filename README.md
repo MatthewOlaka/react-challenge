@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## React Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Requirements:
 
-## Available Scripts
+-[x] Create state and controls for each of the 6 attributes (Strength, Dexterity…) so they can be incremented/decremented independently. These 6 attributes make a character.
 
-In the project directory, you can run:
+-[x] Display classes on the screen (Fighter, Wizard…) and visually change the UI when the character meets the minimum requirements for that class (all attributes are greater than or equal to the class minimums)
 
-### `npm start`
+-[x] When clicking on a class, display the minimum required statistics for that class
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-[x] Add an “ability modifier” to each attribute row, this is calculated as +1 for each 2 points above 10, for example…
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 7 -> -2
+- 9 -> -1
+- 10 -> 0
+- 11 -> 0
+- 12 -> 1
+- 14 -> 2
+- 20 -> 5
 
-### `npm test`
+-[x] Implement skills feature, but didnt finish due to time constraint: Implement skills. Characters have 10 + (4 * int modifier) points to spend on skills. A skill is the sum of points spent and the skill’s corresponding ability modifier (see SKILL_LIST for what ability modifier affects each skill). Display each skill in a row in a separate section. For example, Acrobatics for a character with 12 dexterity may look like
+Acrobatics - points: 2 [+] [-] modifier: 1 total: 3 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-[x] Save the character(s) to an API so they can be retrieved when the app starts next time. Make a post request with a JSON payload to https://recruiting.verylongdomaintotestwith.ca/api/{{github_username}}/character to save data, and a get request to https://recruiting.verylongdomaintotestwith.ca/api/{{github_username}}/character to retrieve the data. It will accept any valid JSON blob and return the most recent version
 
-### `npm run build`
+-[x] Implement a maximum on all attributes of 70. For example, if a character has 20 strength and 10 for all other attributes, they must decrease one before they can increase another
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-[] Add the ability to edit multiple characters simultaneously with the same rules above
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application, follow these steps:
 
-### `npm run eject`
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the dependencies by running `npm install`.
+4. Start the development server by running `npm start`.
+5. Open a web browser and navigate to http://localhost:3000.
+6. Follow the on-screen instructions to create a character.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Node.js
+- npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was created by Matthew Olaka.
