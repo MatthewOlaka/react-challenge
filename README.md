@@ -1,6 +1,6 @@
-## React Coding Challenge
+# React Coding Challenge
 
-# Requirements:
+## Requirements:
 
 - [x] Create state and controls for each of the 6 attributes (Strength, Dexterity…) so they can be incremented/decremented independently. These 6 attributes make a character.
 
